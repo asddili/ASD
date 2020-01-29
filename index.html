@@ -1,9 +1,7 @@
-<html>
-<head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<title>ASD Programlama dili</title>
-</head>
-<body>
+
+
 
 <button id="runbutton" class="runbutton" onclick="runcode()">
 Get
@@ -13,7 +11,7 @@ Endir
 </button>
 <button id="runbutton" class="runbutton3" onclick="document.getElementById('fileInput').click()">
 Yüklə
-</button>
+</button> 
 <br><br>
 <textarea id="code"></textarea>
 <div id="outputbox">
@@ -30,7 +28,7 @@ var i;
 var o;
 var p;
 var e;
-var printa = [];
+var  printa = [];
 var current;
 var variablecolumn = 1;
 var printpend;
@@ -65,12 +63,11 @@ for (p = 0; p < s1split.length ; p++) {
 if (s1split[p] == "(") {
 var variable1 = s1n.match(/\(([^)]+)\)/)[1];
 s1n = s1n.replace("("+variable1+")",eval(variable1));
-
 } else {
 
 }
 }
-document.getElementById('output').innerHTML = document.getElementById('output').innerHTML + "<span>"+s1n+"</span>";
+document.getElementById('output').innerHTML = document.getElementById('output').innerHTML + "<span style="+"color:red"+">"+s1n+"</span>";
 } else if (note) {
 	current = codelist[i];
 var s2 = current.substring(2);
@@ -287,6 +284,9 @@ function share() {
 }
 </script>
 <style>
+.yaz{
+color: red;
+}
 #code {
 	width: 50%;
 	resize: none;
@@ -302,7 +302,7 @@ function share() {
 	width: 49%;
 	height: 604px;
 	border: 1px solid black;
-	background-color: #5a5a5a;
+	background-color: black;
 	word-wrap:break-word;
 
 }
@@ -365,5 +365,5 @@ background-color: green;
 
 <!-- Open Dialog -->
 <input id=" fileinput" =""="" multiple="false" accept=".asd" style="display:none;">
-</body>
-</html>
+
+
