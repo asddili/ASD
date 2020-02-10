@@ -10,7 +10,8 @@ background-color: #4CAD50;
 }
 </style>
 <script>
-download("index.html","/editor/index.html")
+function yukle(){
+download("index.html",/editor/index.html)}
 </script>
 </body>
 </html>
