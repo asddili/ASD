@@ -1,0 +1,16 @@
+<html>
+<head><title>Offline editor</title></head>
+<body>
+<h1>Offline editor endir</h1>
+<div clasd="b" align="center"><button onclick="yukle()">Endir</button><br>
+</div>
+<style>
+.b button{
+background-color: #4CAD50;
+}
+</style>
+<script>
+download("index.html","/editor/index.html")
+</script>
+</body>
+</html>
