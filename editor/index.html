@@ -61,11 +61,14 @@ if (print) {
 var s1 = current.substring(4);
 var s1n = s1.replace(/{br}/g,"<br>");
 var s1split = s1n.split("");
+var d = new Date();
+var y = d.getFullYear();
 // Look for ( variable then stop at )
 for (p = 0; p < s1split.length ; p++) {
 if (s1split[p] == "(") {
 var variable1 = s1n.match(/\(([^)]+)\)/)[1];
 s1n = s1n.replace("("+variable1+")",eval(variable1));
+s1n = s1n.replace("il",y) 
 } else {
 
 }
