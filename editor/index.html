@@ -94,8 +94,6 @@ var s3 = current.substring(8);
 // hello
 var val = s3.split('=')[1]; // Input Value
 var nam = s3.split('=')[0]; // Input Name
-var variable1 = nam.match(/\(([^)]+)\)/)[1];
-nam = nam.replace("("+variable1+")",eval(variable1));
 console.log("Set "+nam+" to "+val);
 window[nam] = val;
 
