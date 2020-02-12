@@ -68,7 +68,7 @@ var saat=d.getHours();
 var gün=d.getDate();
 var ay=d.getMonth();
 var ay=ay+1;
-if(typeof(reqem)!== 'undefined'){
+if(typeof(reqem)== 'undefined'){
        var reqem=100
     }
 var random=Math.floor(Math.random()*reqem)
@@ -310,7 +310,7 @@ color: red;
 	font-size: 20px;
 	font-family: times new roman;
 	outline: none;
-        border-radius: 5px;
+        border-radius: 10px;
 	
 }
 #outputbox {
