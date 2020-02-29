@@ -92,7 +92,8 @@ console.log(s2);
 var s3 = current.substring(8);
 // hello
 var val = s3.split('=')[1]; // Input Value
-var nam = s3.split('=')[0]; // Input Name
+var nam = s3.split('=')[0];// Input Name
+var val=eval(val)
 console.log("Set "+nam+" to "+val);
 window[nam] = val;
 
